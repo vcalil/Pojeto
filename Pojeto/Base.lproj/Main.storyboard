@@ -16,33 +16,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Enl-ju-5NY">
-                                <rect key="frame" x="20" y="409" width="374" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" indicatorStyle="black" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="i0B-tV-h4r">
+                                <rect key="frame" x="87" y="338" width="240" height="280"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Enl-ju-5NY" secondAttribute="trailing" constant="20" id="97o-Of-njM"/>
-                            <constraint firstItem="Enl-ju-5NY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Opl-fi-1o0"/>
-                            <constraint firstItem="Enl-ju-5NY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="365" id="aqt-aE-rSi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="i0B-tV-h4r" secondAttribute="trailing" constant="87" id="6qD-v5-D2A"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="i0B-tV-h4r" secondAttribute="bottom" id="8Mn-pB-Po2"/>
+                            <constraint firstItem="i0B-tV-h4r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="ejH-2f-ecj"/>
+                            <constraint firstItem="i0B-tV-h4r" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="294" id="wBb-zb-F5x"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="label" destination="Enl-ju-5NY" id="vBs-xX-ofP"/>
+                        <outlet property="table" destination="i0B-tV-h4r" id="tIq-b1-SXi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-177" y="41"/>
+            <point key="canvasLocation" x="-178.2608695652174" y="40.848214285714285"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
